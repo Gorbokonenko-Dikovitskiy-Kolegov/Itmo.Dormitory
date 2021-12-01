@@ -1,0 +1,49 @@
+﻿* {
+    box-sizing: border-box;
+    font-family: 'Roboto', serif;
+    line-height: 150%;
+}
+
+body {
+    margin: 0;
+}
+
+.menu {
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    background: linear-gradient(to top, #F21F5B, #2E2FB2);
+}
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        .menu ul li {
+            list-style: none;
+            line-height: 4em;
+            padding: 0 1em;
+            color: #FFFFFF;
+        }
+
+.container {
+    width: 80%;
+    float: right;
+    position: relative;
+}
+
+
+
+.content {
+    width: 70%;
+    padding: 1em;
+    float: right;
+    background: coral;
+}
+
+p.lead {
+    font-size: 1.18em;
+}
