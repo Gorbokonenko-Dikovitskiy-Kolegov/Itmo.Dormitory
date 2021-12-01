@@ -23,7 +23,17 @@ namespace Itmo.Dormitory.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Announcements()
+        {
+            return View();
+        }
+
+        public IActionResult Applications()
+        {
+            return View();
+        }
+
+        public IActionResult Booking()
         {
             return View();
         }
