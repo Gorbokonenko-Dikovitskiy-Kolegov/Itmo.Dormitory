@@ -40,8 +40,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    text-align: center;
+    text-align: left;
     word-break: break-word;
+    padding-top: 10%
 }
 
 .text-light {
