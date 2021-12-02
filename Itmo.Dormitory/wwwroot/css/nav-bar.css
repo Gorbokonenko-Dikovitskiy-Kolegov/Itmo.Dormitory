@@ -1,6 +1,6 @@
 ﻿* {
     box-sizing: border-box;
-    font-family: 'Roboto', serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     line-height: 150%;
 }
 
@@ -15,35 +15,35 @@ body {
     left: 0;
     z-index: 100;
     background: linear-gradient(to top, #F21F5B, #2E2FB2);
-}
-
-    .menu ul {
-        margin: 0;
-        padding: 0;
-    }
-
-        .menu ul li {
-            list-style: none;
-            line-height: 4em;
-            padding: 0 1em;
-            color: #FFFFFF;
-        }
-
-.container {
-    width: 80%;
-    float: right;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 
-
-.content {
-    width: 70%;
-    padding: 1em;
-    float: right;
-    background: coral;
+.navbar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 15%;
+    justify-content: space-around;
 }
 
-p.lead {
-    font-size: 1.18em;
+.navbar-item {
+    font-size: 17px;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    word-break: break-word;
+}
+
+.text-light {
+    color: white
 }
