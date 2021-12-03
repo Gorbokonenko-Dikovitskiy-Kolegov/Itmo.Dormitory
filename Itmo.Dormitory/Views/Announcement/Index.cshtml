@@ -6,46 +6,49 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Announcement.css" />
+    <script src="~/js/Announcement.js"></script>
 </head>
 <body>
     <main>
         <section class="announcements">
-            <div class="container">
-                <ul class="announcements__list">
-                    <li class="announcements__item">
-                        <article class="announcement">
-                            <div class="announcement__description">
-                                <h3 class="announcement__title"> Обновление договора о проживании в общежитии </h3>
-                                <p class="announcement__content">Все проживающие в общежитии до 20 числа текущего месяца должны подойти в кабинет..</p>
-                                <a class="announcement_link" href="">Подробнее</a>
-                                <p class="announcement__date">10.09.2021</p>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="announcements__item">
-                        <article class="announcement">
-                            <div class="announcement__description">
-                                <h3 class="announcement__title"> Изменение времени работы прачечной </h3>
-                                <p class="announcement__content">С 10 по 20 сентября прачечная будет работать до 19:00</p>
-                                <a class="announcement_link" href="">Подробнее</a>
-                                <p class="announcement__date">09.09.2021</p>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="announcements__item">
-                        <article class="announcement">
-                            <div class="announcement__description">
-                                <h3 class="announcement__title"> Спортзал Вяземский будет  доступен с 13.09 </h3>
-                                <p class="announcement__content">После окончания ремонта фасада студенты смогут посещать спортзал</p>
-                                <p class="announcement__date">02.08.2021</p>
-                                <a class="announcement_link" href="">Подробнее</a>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
-            </div>
+            <ul class="announcements__list">
+                <li class="announcements__item box-shadow">
+                    <article class="announcement">
+                        <div class="announcement__description">
+                            <h3 class="announcement__title"> Обновление договора о проживании в общежитии </h3>
+                            <p class="announcement__content">Все проживающие в общежитии до 20 числа текущего месяца должны подойти в кабинет..</p>
+                            <a class="announcement_link" href="">Подробнее</a>
+                            <p class="announcement__date">10.09.2021</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="announcements__item box-shadow">
+                    <article class="announcement">
+                        <div class="announcement__description">
+                            <h3 class="announcement__title"> Изменение времени работы прачечной </h3>
+                            <p class="announcement__content">С 10 по 20 сентября прачечная будет работать до 19:00</p>
+                            <a class="announcement_link" href="">Подробнее</a>
+                            <p class="announcement__date">09.09.2021</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="announcements__item box-shadow">
+                    <article class="announcement">
+                        <div class="announcement__description">
+                            <h3 class="announcement__title"> Спортзал Вяземский будет  доступен с 13.09 </h3>
+                            <p class="announcement__content">После окончания ремонта фасада студенты смогут посещать спортзал</p>
+                            <p class="announcement__date">02.08.2021</p>
+                            <a class="announcement_link" href="">Подробнее</a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
         </section>
     </main>
-
-</body>
-</html>
+    <script>
+        paint();
+     </script>
+</body >
+</html >
