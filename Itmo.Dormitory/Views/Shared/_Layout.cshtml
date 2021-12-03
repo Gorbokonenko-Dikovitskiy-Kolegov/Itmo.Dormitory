@@ -4,33 +4,57 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Itmo.Dormitory</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!--<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/nav-bar.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Itmo.Dormitory</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Announcement" asp-action="Index">Объявления</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Application" asp-action="Index">Заявления</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Reservation" asp-action="Index">Бронирование комнат</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div class="menu">
+            <img src="~/images/ItmoLogo.png" style="margin: 15% 0 0 0"/>
+            <ul class="navbar">
+                <li class="navbar-item">
+                    <a class="nav-link text-light" asp-area="" asp-controller="Announcement" asp-action="Index">
+                        <img src="~/images/Announcement.png" style="width: 29%; height: 29%; padding-top: 3%" />
+                        <p style="padding-left: 10%">Объявления</p>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link text-light"  asp-area="" asp-controller="Application" asp-action="Index">
+                        <img src="~/images/Application.png " style="width: 29%; height: 29%" />
+                        <p>Заявления</p>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link text-light" asp-area="" asp-controller="Reservation" asp-action="Index">
+                        <img src="~/images/Room.png" style="width: 35%; height: 35%; padding-top: 10%" />
+                        <p style="padding-left: 15%">Бронь комнат</p>
+                    </a>
+                </li>
+            </ul>
+            <!--
+    <div class="container">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Itmo.Dormitory</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Announcement" asp-action="Index">Объявления</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Application" asp-action="Index">Заявления</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Reservation" asp-action="Index">Бронирование комнат</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        -->
+        </div>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
