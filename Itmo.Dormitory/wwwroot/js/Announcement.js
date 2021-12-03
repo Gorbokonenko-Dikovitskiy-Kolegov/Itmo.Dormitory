@@ -9,6 +9,6 @@ function getRandom() {
 function paint() {
     var items = document.getElementsByClassName("announcements__item ");
     for (let i = 0; i < items.length; i++) {
-        items[i].style.borderColor = getRandom();
-    }
+        items[i].style.borderColor = "black black black " + getRandom()
+    };
 }
