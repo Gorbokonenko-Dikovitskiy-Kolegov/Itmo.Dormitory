@@ -8,6 +8,7 @@
     height: 100vh;
     justify-content: space-between;
     align-content: stretch;
+    margin: 0 20%;
 }
 #itmo-logo {
     width: 350px;
@@ -17,7 +18,6 @@
 .button-container {
     display: flex;
     flex-direction: column;
-    margin: 0 20%;
 }
 
 .link-container {
