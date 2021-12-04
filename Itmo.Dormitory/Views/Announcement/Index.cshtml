@@ -1,12 +1,40 @@
-﻿@{
+﻿@model List<Announcement>
+@{
     ViewData["Title"] = "Announcements";
 }
 <head>
     <script>setActiveNavItem('announcements')</script>
 </head>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Тут висят объявления.</p>
-</div>
-
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Announcement.css" />
+    <script src="~/js/Announcement.js"></script>
+</head>
+<body>
+    <main>
+        @foreach (Announcement announcement in Model)
+        {
+        <section class="announcements">
+            <ul class="announcements__list">
+                <li class="announcements__item box-shadow">
+                    <article class="announcement">
+                        <div class="announcement__description">
+                            <h3 class="announcement__title"> @announcement.Title </h3>
+                            <p class="announcement__content">@announcement.Content</p>
+                            <p class="announcement__date">@announcement.CreationTime</p>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+     </section>
+        }  
+    </main>
+    <script>
+        paint();
+    </script>
+</body>
+</html>
