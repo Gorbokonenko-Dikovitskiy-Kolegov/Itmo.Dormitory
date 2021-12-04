@@ -48,7 +48,7 @@ body {
     top: 0;
     bottom: 0;
     margin: auto 0;
-    justify-content: space-around
+    justify-content: space-evenly;
 }
 
 .vertical-center {
