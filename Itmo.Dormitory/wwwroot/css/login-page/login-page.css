@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: stretch;
     margin: 0 20%;
 }
@@ -34,20 +34,20 @@
     padding-left: 5px;
 }
 
-.link-container a:link {
+.link:link {
     color: #2d2fb6;
     text-decoration: none;
 }
 
-.link-container a:visited {
+.link:visited {
     color: #2d2fb6;
 }
 
-.link-container a:hover {
+.link:hover {
     color: hotpink;
 }
 
-a:active {
+.link:active {
     color: hotpink;
 }
 

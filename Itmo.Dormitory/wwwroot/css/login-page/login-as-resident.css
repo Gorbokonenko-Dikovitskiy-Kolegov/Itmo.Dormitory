@@ -10,7 +10,7 @@ hr {
     size: 2;
     margin: 10px;
 }
-input {
+input[type="text"], input[type="submit"], input[type="password"] {
     display: flex;
     overflow: hidden;
     margin: 10px;
@@ -21,7 +21,7 @@ input {
     -ms-user-select: none;
     user-select: none;
     transition: all 150ms linear;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     text-transform: none;
     border: 1px solid #818181;
@@ -38,6 +38,23 @@ input {
     height: 15px;
 }
 
+
+
+    input[type="text"]:hover {
+        color: #202129;
+        background-color: #e1e2e2;
+        opacity: 1;
+    }
+    input[type="password"]:hover {
+        color: #202129;
+        background-color: #e1e2e2;
+        opacity: 1;
+    }
+
+    input[type="submit"] {
+        height:50px;
+    }
+
 label {
     font-size: 19px;
     font-weight: 700;
@@ -46,8 +63,21 @@ label {
 form {
     display: flex;
     flex-direction: column;
+    margin-top: 15%;
 }
 .textbox-container {
     display: flex;
     flex-direction: column;
+}
+
+.login-helpers-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+input[type=checkbox] {
+    transform: scale(1.5);
+    margin-right: 5px;
 }
