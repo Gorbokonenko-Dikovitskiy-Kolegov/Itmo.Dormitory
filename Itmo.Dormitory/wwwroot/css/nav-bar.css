@@ -27,12 +27,15 @@ body {
     flex-direction: column;
     margin-bottom: 0;
     list-style: none;
-    padding: 15%;
     justify-content: space-around;
 }
 
 .navbar-item {
     font-size: 17px;
+    display: flex;
+    align-items: stretch;
+    height: 120%;
+    padding: 20% 0 20% 0;
 }
 
 .nav-link {
@@ -42,7 +45,21 @@ body {
     justify-content: space-between;
     text-align: left;
     word-break: break-word;
-    padding-top: 10%
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    justify-content: space-evenly;
+}
+
+.vertical-center {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.check-square {
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
 }
 
 .text-light {
