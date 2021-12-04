@@ -132,3 +132,48 @@ body {
     z-index: 9999;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
+
+/*calendar*/
+
+.timepicker {
+    position: absolute;
+    top: 120%;
+    left: 35%;
+}
+.neo-input {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 15px;
+
+    color: #494949 !important;
+    background: #ffffff;
+    border: 2px solid #494949 !important;
+    transition: all 0.4s ease 0s;
+}
+.reserve {
+    position: absolute;
+    top: 150%;
+    left: 35%;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 15px;
+
+    color: #494949 !important;
+    background: #ffffff;
+    border: 2px solid #494949 !important;
+    transition: all 0.4s ease 0s;
+}
+
+
+.reserve:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+}
+
+/*button*/
