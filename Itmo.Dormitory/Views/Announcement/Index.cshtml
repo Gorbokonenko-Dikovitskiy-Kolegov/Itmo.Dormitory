@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<Announcement>
+@{
     ViewData["Title"] = "Announcements";
 }
 
@@ -12,40 +13,25 @@
 </head>
 <body>
     <main>
+        @foreach (Announcement announcement in Model)
+        {
         <section class="announcements">
             <ul class="announcements__list">
                 <li class="announcements__item box-shadow">
                     <article class="announcement">
                         <div class="announcement__description">
-                            <h3 class="announcement__title"> Обновление договора о проживании в общежитии </h3>
-                            <p class="announcement__content">Все проживающие в общежитии до 20 числа текущего месяца должны подойти в кабинет..</p>
-                            <p class="announcement__date">10.09.2021</p>
-                        </div>
-                    </article>
-                </li>
-                <li class="announcements__item box-shadow">
-                    <article class="announcement">
-                        <div class="announcement__description">
-                            <h3 class="announcement__title"> Изменение времени работы прачечной </h3>
-                            <p class="announcement__content">С 10 по 20 сентября прачечная будет работать до 19:00</p>
-                            <p class="announcement__date">09.09.2021</p>
-                        </div>
-                    </article>
-                </li>
-                <li class="announcements__item box-shadow">
-                    <article class="announcement">
-                        <div class="announcement__description">
-                            <h3 class="announcement__title"> Спортзал Вяземский будет  доступен с 13.09 </h3>
-                            <p class="announcement__content">После окончания ремонта фасада студенты смогут посещать спортзал</p>
-                            <p class="announcement__date">02.08.2021</p>
+                            <h3 class="announcement__title"> @announcement.Title </h3>
+                            <p class="announcement__content">@announcement.Content</p>
+                            <p class="announcement__date">@announcement.CreationTime</p>
                         </div>
                     </article>
                 </li>
             </ul>
-        </section>
+     </section>
+        }  
     </main>
     <script>
         paint();
-     </script>
-</body >
-</html >
+    </script>
+</body>
+</html>
