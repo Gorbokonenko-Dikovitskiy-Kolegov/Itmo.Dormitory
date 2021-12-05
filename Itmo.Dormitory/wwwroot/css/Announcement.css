@@ -30,7 +30,35 @@ main {
     justify-content: space-between;
 }
 
-.filter-container{
-    padding-right:0;
-    flex-direction: row;
+.filter-container {
+    padding: 10% 25% 0% 0%;
+    display: flex;
+    flex-direction: column;
+    color: #888787;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+    border: 1px solid #888787;
+}
+
+.sort-box {
+    margin-top: 7px;
+    border: 1px solid #888787;
+    padding: 2px;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+select {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #888787;
 }
