@@ -4,8 +4,8 @@
     return newColor;
 };
 
-function paint(item) {
-    var items = document.getElementsByClassName(item);
+function paint() {
+    var items = document.getElementsByClassName("announcements__item ");
     for (let i = 0; i < items.length; i++) {
         items[i].style.borderColor = "#888787 #888787 #888787 " + getRandom()
     };
