@@ -1,4 +1,4 @@
-﻿var data;
+var data;
 var currentlyShowed;
 
 $(document).ready(function () {

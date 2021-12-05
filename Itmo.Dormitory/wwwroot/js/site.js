@@ -1,4 +1,12 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿function getRandom() {
+    // 16777215 (decimal) == ffffff in hexidecimal
+    var newColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    return newColor;
+};
 
-// Write your JavaScript code.
+function paint(item) {
+    var items = document.getElementsByClassName(item);
+    for (let i = 0; i < items.length; i++) {
+        items[i].style.borderColor = "#888787 #888787 #888787 " + getRandom()
+    };
+}
