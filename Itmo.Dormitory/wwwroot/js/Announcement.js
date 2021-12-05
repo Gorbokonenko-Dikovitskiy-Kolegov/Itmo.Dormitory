@@ -1,27 +1,32 @@
 ﻿var data;
+var currentlyShowed;
 
 $(document).ready(function () {
+    for (var i = 0; i < data.length; i++) {
+        data[i]['creationTime'] = new Date(data[i]['creationTime']);
+    }
+    currentlyShowed = data.slice();
     updateAnnouncements(data);
     document.getElementById('search').addEventListener('input', search);
-
 });
 
 
 function search(e) {
-
     text = e.target.value;
-    searchIds = [];
-
-    hideAll();
-
+    var tmp = currentlyShowed.splice();
     for (var i = 0; i < data.length; i++) {
         isTextInTitle = data[i]['title'].indexOf(text) != -1;
         isTextInContent = data[i]['content'].indexOf(text) != -1;
-
         if (isTextInTitle || isTextInContent) {
-            document.getElementById('announcements__item_' + data[i]['id']).hidden = false;
+            tmp.push(data[i])
+
+        }
+        else {
+            tmp.splice(i, i);
         }
     }
+    currentlyShowed = tmp;
+    draw();
 }
 
 function hideAll() {
@@ -30,6 +35,17 @@ function hideAll() {
     }
 }
 
+function draw() {
+    hideAll();
+    for (var i = 0; i < currentlyShowed.length; i++) {
+        document.getElementById('announcements__item_' + currentlyShowed[i]['id']).hidden = false;
+    }
+}
+
+
+function sortByTime() {
+
+}
 
 function getRandom() {
     // 16777215 (decimal) == ffffff in hexidecimal
