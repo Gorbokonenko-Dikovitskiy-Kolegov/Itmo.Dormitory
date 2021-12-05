@@ -2,8 +2,33 @@
 
 $(document).ready(function () {
     updateAnnouncements(data);
+    document.getElementById('search').addEventListener('input', search);
+
 });
 
+
+function search(e) {
+
+    text = e.target.value;
+    searchIds = [];
+
+    hideAll();
+
+    for (var i = 0; i < data.length; i++) {
+        isTextInTitle = data[i]['title'].indexOf(text) != -1;
+        isTextInContent = data[i]['content'].indexOf(text) != -1;
+
+        if (isTextInTitle || isTextInContent) {
+            document.getElementById('announcements__item_' + data[i]['id']).hidden = false;
+        }
+    }
+}
+
+function hideAll() {
+    for (var i = 0; i < data.length; i++) {
+        document.getElementById('announcements__item_' + data[i]['id']).hidden = true;
+    }
+}
 
 
 function getRandom() {
