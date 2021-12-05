@@ -10,3 +10,4 @@ function paint(item) {
         items[i].style.borderColor = "#888787 #888787 #888787 " + getRandom()
     };
 }
+
