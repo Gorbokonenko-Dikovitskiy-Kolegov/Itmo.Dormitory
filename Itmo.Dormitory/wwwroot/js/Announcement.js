@@ -8,6 +8,10 @@ $(document).ready(function () {
     currentlyShowed = data.slice();
     updateAnnouncements(data);
     document.getElementById('search').addEventListener('input', search);
+
+
+    document.querySelector('#new-first').onchange = function () { sortByTime(this.value); };
+
 });
 
 
@@ -42,11 +46,19 @@ function draw() {
     }
 }
 
-
-function sortByTime() {
-
+function sortByTime(value) {
+    if (value == 0)
+        TimeAscending();
+    else
+        TimeDescending();
+}
+function TimeDescending() {
+    document.getElementsByClassName('announcements__list')[0].style['flex-direction'] = 'column-reverse';
 }
 
+function TimeAscending() {
+    document.getElementsByClassName('announcements__list')[0].style['flex-direction'] = 'column';
+}
 function getRandom() {
     // 16777215 (decimal) == ffffff in hexidecimal
     var newColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
