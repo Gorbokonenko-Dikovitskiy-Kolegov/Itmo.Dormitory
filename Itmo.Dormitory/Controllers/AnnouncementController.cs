@@ -21,7 +21,7 @@ namespace Itmo.Dormitory.Controllers
             for(int i = 0; i < 8; i++)
             {
                 var announcement = new Announcement 
-                       { Title = $"{i} Объявление", Content = $"Содержимое {i} объявления", CreationTime = DateTime.Now };
+                       { ID=Guid.NewGuid(), Title = $"{i} Объявление", Content = $"Содержимое {i} объявления", CreationTime = DateTime.Now.AddDays(-i) };
                 announcementList.Add(announcement);
             }
             return announcementList;
