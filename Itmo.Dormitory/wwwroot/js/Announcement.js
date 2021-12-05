@@ -29,6 +29,7 @@ function updateAnnouncements(data) {
     html_sample = document.getElementsByClassName('announcements')[0].innerHTML
     clearAnnouncements();
     renderAnnouncements(data, html_sample);
+    paint();
 }
 function getHTML(announcement, html_sample) {
     fields = html_sample.match(/\$__(.*)__\$/gi)
@@ -37,7 +38,6 @@ function getHTML(announcement, html_sample) {
 
     for (var i = 0; i < fields.length; i++) {
         field = fields[i].replace("$__", '').replace("__$", '')
-        alert(announcement[field])
         new_html = new_html.replace("$__" + field + "__$", announcement[field]);
     }
     return new_html;
