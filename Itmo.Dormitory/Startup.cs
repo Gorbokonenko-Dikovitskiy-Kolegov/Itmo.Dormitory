@@ -50,7 +50,7 @@ namespace Itmo.Dormitory
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Account}/{action=Index}");
+                    pattern: "{controller=Announcement}/{action=Index}");
             });
         }
     }
