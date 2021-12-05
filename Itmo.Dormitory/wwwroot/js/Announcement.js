@@ -1,4 +1,10 @@
-﻿
+﻿var data;
+
+$(document).ready(function () {
+    updateAnnouncements(data);
+});
+
+
 
 function getRandom() {
     // 16777215 (decimal) == ffffff in hexidecimal
@@ -25,7 +31,7 @@ function clearAnnouncements(className) {
     document.getElementsByClassName(className)[0].innerHTML = "";
 }
 
-function updateAnnouncements(data, className) {
+function updateAnnouncements(data, className = 'announcements__list') {
     html_sample = document.getElementsByClassName(className)[0].innerHTML
     clearAnnouncements(className);
     renderAnnouncements(data, html_sample, className);

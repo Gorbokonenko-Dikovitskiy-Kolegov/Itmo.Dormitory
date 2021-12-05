@@ -1,9 +1,12 @@
-﻿@model List<Announcement>
+@model List<Announcement>
 @{
     ViewData["Title"] = "Announcements";
 }
 <head>
-    <script>setActiveNavItem('announcements')</script>
+    <script>
+        setActiveNavItem('announcements');
+        data=@Html.Raw(Json.Serialize(Model));
+    </script>
 </head>
 
 <!doctype html>
