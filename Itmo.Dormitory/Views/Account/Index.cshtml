@@ -12,11 +12,12 @@
     <div class="continer">
         <img id="itmo-logo" src="~/images/ItmoLogo blue.png" />
         <div class="button-container">
-            <div class='button -regular center'>Sign in with ISU</div>
+            <a asp-controller="Account" asp-action="LoginAsResident" class='button -regular center'>Sign in with ISU</a>
             <div class='button -regular center'>Sign in as an administrator</div>
         </div>
         <div class="link-container">
-            <div><img src="~/images/Call Icon.png"><a id="call-support" href="#">Связаться с технической поддержкой</a></div>
-            <div><a href="#">English</a> | <a href="#">Русский</a></div>
+            <div><img src="~/images/Call Icon.png"><a class="link" id="call-support" href="#">Связаться с технической поддержкой</a></div>
+            <div><a class="link" href="#">English</a> | <a class="link" href="#">Русский</a></div>
         </div>
+    </div>
 </body>
