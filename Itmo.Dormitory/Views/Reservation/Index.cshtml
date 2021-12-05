@@ -51,16 +51,20 @@
 <!--
 <input type="text" id="datepicker">
 -->
-<div class="timepicker">
-    <datetime-slot-picker 
-        placeholder="Выберете свободную дату и время" 
-        time-slots-text="Время"
-        no-slots-text="Нет доступных слотов" 
-        class="picker"
-    >
-    </datetime-slot-picker>
-</div>
-<button class="reserve" id="button">Reserve</button>
+    <article class="button-part">
+    <div class="timepicker">
+        <datetime-slot-picker 
+            placeholder="Выберете свободную дату и время" 
+            time-slots-text="Время"
+            no-slots-text="Нет доступных слотов" 
+            class="picker"
+        >
+        </datetime-slot-picker>
+    </div>
+    <div>
+        <button class="reserve" id="button">Reserve</button>
+    </div>
+    </article>
 </body>
 <!--
 <script src="pikaday.js"></script>
