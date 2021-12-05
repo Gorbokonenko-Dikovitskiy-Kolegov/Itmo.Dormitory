@@ -16,25 +16,33 @@
 </head>
 <body>
     <main>
-        @foreach (Announcement announcement in Model)
-        {
         <section class="announcements">
             <ul class="announcements__list">
                 <li class="announcements__item box-shadow">
                     <article class="announcement">
                         <div class="announcement__description">
-                            <h3 class="announcement__title"> @announcement.Title </h3>
-                            <p class="announcement__content">@announcement.Content</p>
-                            <p class="announcement__date">@announcement.CreationTime</p>
+                            <h3 class="announcement__title">$__title__$</h3>
+                            <p class="announcement__content">$__content__$</p>
+                            <p class="announcement__date">$__creationTime__$</p>
                         </div>
                     </article>
                 </li>
             </ul>
-     </section>
-        }  
-    </main>
+        </section>
+        <section class="filter-container">
+            <div class="textbox-container">
+                <div class="textbox">
+                    <img>
+                    <input value="Search" type="search">
+                </div>
+
+            </div>
+
+        </section>
+        </main>
     <script>
         paint();
+        updateAnnouncements(@Html.Raw(Json.Serialize(Model)));
     </script>
 </body>
 </html>

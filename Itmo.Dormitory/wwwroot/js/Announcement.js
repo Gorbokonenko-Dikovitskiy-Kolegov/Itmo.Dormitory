@@ -12,3 +12,33 @@ function paint() {
         items[i].style.borderColor = "#888787 #888787 #888787 " + getRandom()
     };
 }
+
+
+function renderAnnouncements(data, html_sample) {
+    announcements = document.getElementsByClassName('announcements')[0];
+    for (var i = 0; i < data.length; i++) {
+        announcements.innerHTML += getHTML(data[i], html_sample);
+    }
+}
+
+function clearAnnouncements() {
+    document.getElementsByClassName('announcements')[0].innerHTML = "";
+}
+
+function updateAnnouncements(data) {
+    html_sample = document.getElementsByClassName('announcements')[0].innerHTML
+    clearAnnouncements();
+    renderAnnouncements(data, html_sample);
+}
+function getHTML(announcement, html_sample) {
+    fields = html_sample.match(/\$__(.*)__\$/gi)
+
+    new_html = html_sample;
+
+    for (var i = 0; i < fields.length; i++) {
+        field = fields[i].replace("$__", '').replace("__$", '')
+        alert(announcement[field])
+        new_html = new_html.replace("$__" + field + "__$", announcement[field]);
+    }
+    return new_html;
+}
