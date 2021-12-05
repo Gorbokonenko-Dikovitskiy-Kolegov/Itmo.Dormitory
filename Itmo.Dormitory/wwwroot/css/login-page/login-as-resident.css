@@ -10,7 +10,7 @@ hr {
     size: 2;
     margin: 10px;
 }
-input[type="text"], input[type="submit"], input[type="password"] {
+input[type="text"], input[type="submit"], input[type="password"], input[type="email"] {
     display: flex;
     overflow: hidden;
     margin: 10px;
