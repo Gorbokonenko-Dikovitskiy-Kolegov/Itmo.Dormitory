@@ -14,21 +14,21 @@ function paint() {
 }
 
 
-function renderAnnouncements(data, html_sample) {
-    announcements = document.getElementsByClassName('announcements')[0];
+function renderAnnouncements(data, html_sample, className) {
+    announcements = document.getElementsByClassName(className)[0];
     for (var i = 0; i < data.length; i++) {
         announcements.innerHTML += getHTML(data[i], html_sample);
     }
 }
 
-function clearAnnouncements() {
-    document.getElementsByClassName('announcements')[0].innerHTML = "";
+function clearAnnouncements(className) {
+    document.getElementsByClassName(className)[0].innerHTML = "";
 }
 
-function updateAnnouncements(data) {
-    html_sample = document.getElementsByClassName('announcements')[0].innerHTML
-    clearAnnouncements();
-    renderAnnouncements(data, html_sample);
+function updateAnnouncements(data, className) {
+    html_sample = document.getElementsByClassName(className)[0].innerHTML
+    clearAnnouncements(className);
+    renderAnnouncements(data, html_sample, className);
     paint();
 }
 function getHTML(announcement, html_sample) {
