@@ -10,7 +10,7 @@ hr {
     size: 2;
     margin: 10px;
 }
-input[type="text"], input[type="submit"], input[type="password"] {
+input[type="text"], input[type="submit"], input[type="password"], input[type="email"] {
     display: flex;
     overflow: hidden;
     margin: 10px;
@@ -40,12 +40,7 @@ input[type="text"], input[type="submit"], input[type="password"] {
 
 
 
-    input[type="text"]:hover {
-        color: #202129;
-        background-color: #e1e2e2;
-        opacity: 1;
-    }
-    input[type="password"]:hover {
+    input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
         color: #202129;
         background-color: #e1e2e2;
         opacity: 1;

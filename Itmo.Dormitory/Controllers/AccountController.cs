@@ -16,5 +16,9 @@ namespace Itmo.Dormitory.Controllers
         {
             return View();
         }
+        public IActionResult LoginAsAdmin()
+        {
+            return View();
+        }
     }
 }
