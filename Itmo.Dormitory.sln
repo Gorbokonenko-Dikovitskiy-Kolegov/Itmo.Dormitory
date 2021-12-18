@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itmo.Dormitory.Web", "Itmo.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itmo.Dormitory.Core", "Itmo.Dormitory.Core\Itmo.Dormitory.Core.csproj", "{E89188D0-043A-4328-A084-1D4DC4824E71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itmo.Dormitory.Infrastruture", "Itmo.Dormitory.Infrastruture\Itmo.Dormitory.Infrastruture.csproj", "{40F9C4EC-B682-4817-A8D4-E5376FC6558E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itmo.Dormitory.Data", "Itmo.Dormitory.Infrastruture\Itmo.Dormitory.Data.csproj", "{40F9C4EC-B682-4817-A8D4-E5376FC6558E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
