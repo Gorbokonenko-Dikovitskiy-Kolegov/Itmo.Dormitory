@@ -16,9 +16,6 @@ namespace Itmo.Dormitory.Data.Contexts
         {
             optionsBuilder.UseSqlite("Filename=database.db");
         }
-        public DormitoryContext()
-        {
-            Database.EnsureCreated();
-        }
+
     }
 }

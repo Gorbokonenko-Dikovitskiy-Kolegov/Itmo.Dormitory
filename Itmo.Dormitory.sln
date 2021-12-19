@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itmo.Dormitory.Web", "Itmo.Dormitory\Itmo.Dormitory.Web.csproj", "{D244EB21-5EB7-42B1-A414-C91278E45642}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itmo.Dormitory.Core", "Itmo.Dormitory.Core\Itmo.Dormitory.Core.csproj", "{E89188D0-043A-4328-A084-1D4DC4824E71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itmo.Dormitory.Core", "Itmo.Dormitory.Core\Itmo.Dormitory.Core.csproj", "{E89188D0-043A-4328-A084-1D4DC4824E71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itmo.Dormitory.Data", "Itmo.Dormitory.Data\Itmo.Dormitory.Data.csproj", "{1EB50CC7-73B1-4A21-B468-88361DE44C63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itmo.Dormitory.Data", "Itmo.Dormitory.Infrastruture\Itmo.Dormitory.Data.csproj", "{40F9C4EC-B682-4817-A8D4-E5376FC6558E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itmo.Dormitory.Web", "Itmo.Dormitory.Web\Itmo.Dormitory.Web.csproj", "{48DEA16E-9634-492F-945F-AF4E02F6957D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D244EB21-5EB7-42B1-A414-C91278E45642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D244EB21-5EB7-42B1-A414-C91278E45642}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D244EB21-5EB7-42B1-A414-C91278E45642}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D244EB21-5EB7-42B1-A414-C91278E45642}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E89188D0-043A-4328-A084-1D4DC4824E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E89188D0-043A-4328-A084-1D4DC4824E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E89188D0-043A-4328-A084-1D4DC4824E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E89188D0-043A-4328-A084-1D4DC4824E71}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40F9C4EC-B682-4817-A8D4-E5376FC6558E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40F9C4EC-B682-4817-A8D4-E5376FC6558E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40F9C4EC-B682-4817-A8D4-E5376FC6558E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40F9C4EC-B682-4817-A8D4-E5376FC6558E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EB50CC7-73B1-4A21-B468-88361DE44C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB50CC7-73B1-4A21-B468-88361DE44C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB50CC7-73B1-4A21-B468-88361DE44C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB50CC7-73B1-4A21-B468-88361DE44C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48DEA16E-9634-492F-945F-AF4E02F6957D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48DEA16E-9634-492F-945F-AF4E02F6957D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48DEA16E-9634-492F-945F-AF4E02F6957D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48DEA16E-9634-492F-945F-AF4E02F6957D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
