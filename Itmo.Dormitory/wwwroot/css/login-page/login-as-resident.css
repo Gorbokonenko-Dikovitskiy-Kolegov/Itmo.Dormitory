@@ -76,3 +76,13 @@ input[type=checkbox] {
     transform: scale(1.5);
     margin-right: 5px;
 }
+@media screen and (max-width: 731px) {
+    #itmo-logo {
+        width: 50%;
+        margin: 10% auto;
+    }
+
+    .continer {
+        justify-content: center;
+    }
+}
