@@ -5,16 +5,13 @@ namespace Itmo.Dormitory.Data.Contexts
 {
     public class DormitoryContext : DbContext
     {
-        public DbSet<Announcement> Announcements { get; set; }
-        public DbSet<Application> Applications { get; set; }
-        public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Announcement> Announcements { get; private set; }
+        public DbSet<Application> Applications { get; private set; }
+        public DbSet<Reservation> Reservations { get; private set; }
 
-        public DormitoryContext(DbContextOptions<DormitoryContext> options) : base(options)
+        public DormitoryContext(DbContextOptions<DormitoryContext> options) : base(options) { }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-        }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlite("Filename=database.db");
         }
 
     }

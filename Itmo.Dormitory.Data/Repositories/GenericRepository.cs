@@ -11,10 +11,10 @@ namespace Itmo.Dormitory.Data.Repositories
         private readonly DbContext _context;
         private readonly DbSet<TEntity> _dbSet;
 
-        public GenericRepository(DbContext context, DbSet<TEntity> set)
+        public GenericRepository(DbContext context)
         {
             _context = context;
-            _dbSet = set;
+            _dbSet = context.Set<TEntity>();
         }
 
         public IQueryable<TEntity> Get()

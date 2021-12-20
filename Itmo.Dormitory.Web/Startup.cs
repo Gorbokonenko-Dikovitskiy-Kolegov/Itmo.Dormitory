@@ -1,4 +1,7 @@
+using Itmo.Dormitory.Core.Services;
 using Itmo.Dormitory.Data.Contexts;
+using Itmo.Dormitory.Data.Entities;
+using Itmo.Dormitory.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,9 +32,15 @@ namespace Itmo.Dormitory
 
             services.AddDbContext<DormitoryContext>(options =>
             {
-                options.UseSqlite($"Data Source= ActivityDB.db");
+                options.UseSqlite($"Data Source= ../Itmo.Dormitory.Data/Dormitory.db");
             });
             services.AddScoped<DbContext, DormitoryContext>();
+            
+            services.AddScoped<GenericRepository<Application>>();
+
+            services.AddScoped<IApplicationService, ApplicationService>();
+            services.AddControllers();
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
