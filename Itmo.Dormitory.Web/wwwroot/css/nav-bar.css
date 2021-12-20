@@ -76,4 +76,23 @@ body {
 .nav-link-img{
     margin:5px;
     margin-left:5px;
+    width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-link-p {
+        display:none;
+    }
+    .menu{
+        width: 20%;
+    }
+    .check-square{
+        height:50%;
+    }
+    .navbar-item{
+        align-items:center;
+    }
+    #itmo-logo{
+        display: none
+    }
 }

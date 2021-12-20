@@ -14,3 +14,14 @@ body {
     width: 40%;
     height: 100%;
 }
+
+@media screen and (max-width: 731px) {
+    .login-container{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 731px) and (max-width: 1200px){
+    .login-container {
+        width: 50%;
+    }
+}
