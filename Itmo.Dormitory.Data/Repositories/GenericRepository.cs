@@ -17,21 +17,27 @@ namespace Itmo.Dormitory.Data.Repositories
             _dbSet = context.Set<TEntity>();
         }
 
+        /*
         public IQueryable<TEntity> Get()
         {
             return _dbSet;
         }
+        */
 
         public IQueryable<TEntity> Get(Func<TEntity, bool> predicate)
         {
             return _dbSet.Where(predicate).AsQueryable();
+        }
+        public IEnumerable<TEntity> GetAll()
+        {
+            return _dbSet;
         }
         public TEntity FindById(Guid id)
         {
             return _dbSet.Find(id);
         }
 
-        public TEntity Create(TEntity item)
+        public TEntity Add(TEntity item)
         {
             _dbSet.Add(item);
             _context.SaveChanges();
@@ -44,8 +50,9 @@ namespace Itmo.Dormitory.Data.Repositories
             return item;
         }
 
-        public void Remove(TEntity item)
+        public void Remove(Guid id)
         {
+            var item = FindById(id);
             _dbSet.Remove(item);
             _context.SaveChanges();
         }
