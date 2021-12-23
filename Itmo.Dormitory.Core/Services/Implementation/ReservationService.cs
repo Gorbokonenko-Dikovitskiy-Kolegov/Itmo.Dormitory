@@ -25,8 +25,7 @@ namespace Itmo.Dormitory.Core.Services.Implementation
         }
         public ReservationDTO GetReservation(Guid id)
         {
-            var reservation = _reservationRepository.FindById(id);
-            return _toDTOmapper.Map<Reservation, ReservationDTO>(reservation);
+            return _toDTOmapper.Map<Reservation, ReservationDTO>(_reservationRepository.FindById(id));
         }
         public void RemoveReservation(Guid id)
         {

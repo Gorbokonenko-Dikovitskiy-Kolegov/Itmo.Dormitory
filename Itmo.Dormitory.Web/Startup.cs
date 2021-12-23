@@ -39,9 +39,11 @@ namespace Itmo.Dormitory
             
             services.AddScoped<GenericRepository<Application>>();
             services.AddScoped<GenericRepository<Reservation>>();
+            services.AddScoped<GenericRepository<Announcement>>();
 
             services.AddScoped<IApplicationService, ApplicationService>();
             services.AddScoped<IReservationService, ReservationService>();
+            services.AddScoped<IAnnouncementService, AnnouncementService>();
             services.AddControllers();
 
         }
