@@ -8,6 +8,6 @@ namespace Itmo.Dormitory.Data.Entities
         public DateTime Date { get; set; }
         public string  Owner { get; set; }
         public bool Status { get; set; }
-        public ApplicationType applicationType { get; set; }
+        public string ApplicationType { get; set; }
     }
 }
