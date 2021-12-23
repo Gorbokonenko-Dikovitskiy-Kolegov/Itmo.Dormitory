@@ -48,6 +48,11 @@ namespace Itmo.Dormitory.Controllers
             return _fromDTOmapper.Map<IEnumerable<ReservationDTO>, List<ReservationModel>>(_reservationService.GetAllUserReservations(username));
         }
 
+        public ReservationModel GetReservation(Guid id)
+        {
+            return _fromDTOmapper.Map<ReservationDTO, ReservationModel>(_reservationService.GetReservation(id));
+        }
+
         public IActionResult Index()
         {
             return View();
