@@ -1,4 +1,5 @@
-using Itmo.Dormitory.Core.Services;
+using Itmo.Dormitory.Core.Services.Implementation;
+using Itmo.Dormitory.Core.Services.Interfaces;
 using Itmo.Dormitory.Data.Contexts;
 using Itmo.Dormitory.Data.Entities;
 using Itmo.Dormitory.Data.Repositories;
@@ -37,8 +38,10 @@ namespace Itmo.Dormitory
             services.AddScoped<DbContext, DormitoryContext>();
             
             services.AddScoped<GenericRepository<Application>>();
+            services.AddScoped<GenericRepository<Reservation>>();
 
             services.AddScoped<IApplicationService, ApplicationService>();
+            services.AddScoped<IReservationService, ReservationService>();
             services.AddControllers();
 
         }
